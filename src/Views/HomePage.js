@@ -1,7 +1,7 @@
 // src/Views/HomePage.js
 import React, { useState } from 'react';
 import './HomePage.css';
-import Header from './TopFold.js';
+import TopFold from './TopFold.js';
 const HomePage = () => {
     const [isBlue, setIsBlue] = useState(false);
 
@@ -11,7 +11,7 @@ const HomePage = () => {
 
     return (
         <div className="milkyway-homepage">
-            <Header />
+            <TopFold />
 
         </div>
     );
