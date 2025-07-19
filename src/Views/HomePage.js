@@ -1,7 +1,7 @@
 // src/Views/HomePage.js
 import React, { useState } from 'react';
 import './HomePage.css';
-import Header from './Header.js';
+import Header from './TopFold.js';
 const HomePage = () => {
     const [isBlue, setIsBlue] = useState(false);
 
