@@ -5,22 +5,22 @@ import milkyWayLogo from '../assets/images/logo512.png';
 
 const Header = () => {
     return (
-        <header className="header">
+        <div className="header">
             <div className="header-content">
                 <div className="header-logo">
                     <img src={milkyWayLogo} alt="Webcafe Logo" />
-                    <h2>automate everything.</h2>
+                    <div>{'{automate '}<b>{'everything'}</b>{'.}'}</div>
                 </div>
                 <div className="header-text">
-                    <h1>The VPN that just works</h1>
-                    <p>Exclusive offer: Get 3 extra months FREE</p>
-                    <button className="header-button">Start Your Risk-Free Trial</button>
+                    <h1 className="header-Line"><span>Holding</span> <span className="highlight">Company</span>.</h1>
+                    <h1 className="header-Line"><span>AI SaaS</span> <span className="highlight">Investor</span></h1>
+                    <h1 className="header-Line"><span>MilkyWayCookie</span> <span className="highlight">ai</span>.</h1>
                 </div>
             </div>
             <div className="header-image">
-                <img src={milkyWay} alt="Webcafe Cup" />
+                <img src={milkyWay} alt="Webcafe Cup" className="header-img" />
             </div>
-        </header>
+        </div>
     );
 };
 
