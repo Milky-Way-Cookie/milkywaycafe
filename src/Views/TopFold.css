@@ -1,73 +1,184 @@
-.header {
+.topfold-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Top black bar */
+.top-bar {
+    background-color: black;
+    color: white;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #fff;
-    width: 80%; 
-    margin: 0 auto; 
-    max-width: 1400px; 
+    padding: 12px 24px;
 }
 
-.header-content {
-    flex: 1;
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+/* Buttons on the right side */
+.top-bar-buttons {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    gap: 15px;
+    gap: 16px;
 }
 
-.header-logo {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+.top-bar-buttons .btn {
+  text-decoration: none; /* Remove underline */
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.header-logo img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
+.top-bar-buttons .btn:hover {
+  transform: scale(1.05);
+  opacity: 0.85;
 }
 
-.header-logo h2 {
-    font-size: 18px;
-    color: #333;
+
+/* Base button style */
+.btn {
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+    transition: all 0.3s ease;
 }
 
-.bold {
-    font-weight: bold;
-}
-.automate {
-    font-weight: normal;
-}
-
-.header-text {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+/* Content Catalog: same black background as bar, white text & white border */
+.content-catalog {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
 }
 
-.header-text h1 {
-    font-size: 48px;
-    color: #333;
-    margin: 0;
-    text-align: left;
+.content-catalog:hover {
+    background-color: #222; /* subtle lighter black on hover */
 }
 
-.highlight {
-    color: #808080; 
+/* Take This Website: gradient green to purple */
+.take-website {
+    background: linear-gradient(135deg, #00c853, #8e24aa);
+    color: white;
+    border: none;
 }
 
-.header-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.take-website:hover {
+    filter: brightness(1.1);
 }
 
-.header-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+/* White separator line */
+.separator {
+    height: 4px;
+    background: white;
+    margin-top: 8px;
+    margin-bottom: 24px;
 }
+
+/* Main section */
+.main-section {
+    text-align: center;
+    padding: 0 0 40px;
+}
+
+/* Big white main title */
+.main-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Subtitle below title */
+.main-subtitle {
+    font-size: 1.25rem;
+    color: white;
+    margin-bottom: 32px;
+}
+
+/* Gradient box full width */
+.gradient-box {
+  background: linear-gradient(135deg, #00c853, #8e24aa);
+  padding: 40px 0 80px 0; /* extra bottom padding for more height */
+  border-radius: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Titles remain centered */
+.main-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.main-subtitle {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+/* Black button inside the box */
+.black-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 16px 32px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex-direction: column;  /* stack content vertically */
+  min-height: 80px;        /* taller height */
+  justify-content: center;
+  text-align: center;
+}
+
+.black-btn:hover {
+  background-color: #222;
+}
+
+.btn-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.btn-main-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.btn-sub-text {
+  font-size: 0.85rem;
+  color: #ccc;
+  margin-top: 4px;
+}
+
+.video-duration {
+  margin-top: 12px;
+  color: #666;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+
+/* Play icon */
+.play-icon {
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+}
+
+
