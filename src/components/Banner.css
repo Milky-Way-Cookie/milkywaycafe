@@ -1,0 +1,21 @@
+.banner-container {
+  background-color: #f0f0f0; /* Match your highlight button color */
+  color: #222; /* Dark text for contrast */
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  border-bottom: 2px solid #e5bcbc; /* Slight border for polish */
+}
+
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
