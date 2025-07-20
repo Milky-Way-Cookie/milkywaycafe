@@ -1,4 +1,3 @@
-// src/Views/HomePage.js
 import React, { useState } from 'react';
 import './HomePage.css';
 import TopFold from './TopFold.js';
