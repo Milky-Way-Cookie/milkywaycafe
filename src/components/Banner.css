@@ -1,11 +1,11 @@
 .banner-container {
-  background-color: #f0f0f0; /* Match your highlight button color */
-  color: #222; /* Dark text for contrast */
+  background-color: #f0f0f0; 
+  color: #222; 
   padding: 10px 20px;
   text-align: center;
   font-weight: 600;
   font-size: 16px;
-  border-bottom: 2px solid #e5bcbc; /* Slight border for polish */
+  border-bottom: 2px solid #e5bcbc; 
 }
 
 
