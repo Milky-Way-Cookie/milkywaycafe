@@ -2,14 +2,17 @@ import React, { useState } from 'react';
 import './TopFold.css';
 import milkyWayLogo from '../assets/images/logo512.png';
 import VideoModal from '../components/VideoModal'; 
+import Banner from '../components/Banner';
+
 
 const TopFold = () => {
   const [isVideoOpen, setVideoOpen] = useState(false);
 
   return (
     <div className="topfold-container">
-      {/* Top bar */}
-      <div className="top-bar">
+    <Banner /> 
+    <div className="top-bar">
+
         <img src={milkyWayLogo} alt="MilkyWayCafe Logo" className="logo" />
         <div className="top-bar-buttons">
           <a className="btn content-catalog" href="https://github.com/Milky-Way-Cookie" target="_blank" rel="noopener noreferrer">My Github Page</a>
@@ -17,10 +20,8 @@ const TopFold = () => {
         </div>
       </div>
 
-      {/* White line */}
       <div className="separator"></div>
 
-      {/* Main section */}
       <div className="main-section">
         <div className="gradient-box">
           <h1 className="main-title">{'{automate everything}'}</h1>
@@ -31,7 +32,7 @@ const TopFold = () => {
             <span className="play-icon">&#9658;</span>
             <div className="btn-text">
               <span className="btn-main-text">Watch Video</span>
-              <span className="btn-sub-text">1 minute</span>
+              <span className="btn-sub-text">10 seconds</span>
             </div>
           </button>
         </div>
