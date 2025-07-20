@@ -5,7 +5,6 @@
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-/* Top black bar */
 .top-bar {
     background-color: black;
     color: white;
@@ -20,14 +19,13 @@
     width: auto;
 }
 
-/* Buttons on the right side */
 .top-bar-buttons {
     display: flex;
     gap: 16px;
 }
 
 .top-bar-buttons .btn {
-  text-decoration: none; /* Remove underline */
+  text-decoration: none; 
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
@@ -37,7 +35,6 @@
 }
 
 
-/* Base button style */
 .btn {
     font-weight: 600;
     padding: 8px 16px;
@@ -48,7 +45,6 @@
     transition: all 0.3s ease;
 }
 
-/* Content Catalog: same black background as bar, white text & white border */
 .content-catalog {
     background-color: black;
     color: white;
@@ -56,7 +52,7 @@
 }
 
 .content-catalog:hover {
-    background-color: #222; /* subtle lighter black on hover */
+    background-color: #222; 
 }
 
 .take-website {
@@ -71,7 +67,6 @@
   opacity: 0.9;
 }
 
-/* White separator line */
 .separator {
     height: 1px;
     background: white;
@@ -79,13 +74,11 @@
     margin-bottom: 8px;
 }
 
-/* Main section */
 .main-section {
     text-align: center;
     padding: 0 0 40px;
 }
 
-/* Big white main title */
 .main-title {
     font-size: 4rem;
     font-weight: 700;
@@ -93,17 +86,15 @@
     margin-bottom: 20px;
 }
 
-/* Subtitle below title */
 .main-subtitle {
     font-size: 1.25rem;
     color: grey;
     margin-bottom: 32px;
 }
 
-/* Gradient box full width */
 .gradient-box {
   background-color: #f0f0f0;
-  padding: 40px 0 80px 0; /* extra bottom padding for more height */
+  padding: 40px 0 80px 0; 
   border-radius: 12px;
   width: 100%;
   box-sizing: border-box;
@@ -115,7 +106,6 @@
   gap: 24px;
 }
 
-/* Titles remain centered */
 .main-title {
   font-size: 4rem;
   font-weight: 700;
@@ -127,7 +117,6 @@
   margin: 0;
 }
 
-/* Black button inside the box */
 .black-btn {
   background-color: black;
   color: white;
@@ -141,8 +130,8 @@
   gap: 12px;
   cursor: pointer;
   transition: transform 0.4s ease-in-out, opacity 0.3s ease-in-out;
-  flex-direction: column;  /* stack content vertically */
-  min-height: 80px;        /* taller height */
+  flex-direction: column; 
+  min-height: 80px;        
   justify-content: center;
   text-align: center;
 }
@@ -176,8 +165,6 @@
   text-align: center;
 }
 
-
-/* Play icon */
 .play-icon {
   font-size: 1.6rem;
   margin-bottom: 4px;
